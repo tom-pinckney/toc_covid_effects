@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.line{
+	fill: none;
+}
+
+g.axes path {
+	stroke: grey;
+	stroke-width: 1.5;
+	fill: none;
+}
+
+g.axes text {
+	font-size: 10pt;
+}

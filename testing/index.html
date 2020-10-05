@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Click Counter</title>
+    <script type="text/javascript" src="../d3.v4.js"></script>
+    <script type="text/javascript" src="../d3-annotation.min.js"></script>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var clicks = 0;
+      var margin = { top: 40, right: 20, bottom: 20, left: 40 };
+
+
+      var svg = d3.select("body").append("svg").attr("height","100%").attr("width","100%");
+
+      svg.on("click", function() {
+        clicks = clicks + 1
+        
+        console.log(clicks)
+      });
+
+      
+
+
+      function clickCounter(i) {
+        return i + 1;
+      }
+
+    </script>
+    
+  </body>
+
+</html>
+
+
